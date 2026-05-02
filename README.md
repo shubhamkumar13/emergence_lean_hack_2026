@@ -8,3 +8,5 @@
 4. `lake build`
 5. `.lake/build/bin/leanhack`
 
+# Emergence
+
