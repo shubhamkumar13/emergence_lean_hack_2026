@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PuzzleData",
+  "description": "The structured data scraped from CluesBySam.com",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "The ISO date of the scrape (YYYY-MM-DD)."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The source URL of the puzzle."
+    },
+    "clues": {
+      "type": "array",
+      "description": "Array of structured logical statements and rules.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "The raw text of the clue or rule."
+          },
+          "type": {
+            "type": "string",
+            "enum": ["clue", "rule"],
+            "description": "'clue' for puzzle-specific logic, 'rule' for general game mechanics."
+          },
+          "metadata": {
+            "type": "object",
+            "description": "Extracted logical markers and entities.",
+            "properties": {
+              "row": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 5,
+                "description": "The grid row mentioned (1-5)."
+              },
+              "column": {
+                "type": "string",
+                "pattern": "^[A-D]$",
+                "description": "The grid column mentioned (A-D)."
+              },
+              "count": {
+                "type": "number",
+                "description": "The number of entities mentioned (e.g., '2 criminals')."
+              },
+              "target": {
+                "type": "string",
+                "enum": ["criminal", "innocent"],
+                "description": "The status of the subjects mentioned."
+              },
+              "subjects": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Names of characters from the grid mentioned in the clue."
+              },
+              "professions": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Professions mentioned in the clue."
+              }
+            }
+          }
+        },
+        "required": ["text", "type"]
+      }
+    },
+    "grid": {
+      "type": "array",
+      "description": "Array of 20 card objects representing the puzzle grid.",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "properties": {
+          "coord": {
+            "type": "string",
+            "pattern": "^[A-D][1-5]$",
+            "description": "Grid position (e.g., 'A1', 'D5')."
+          },
+          "name": {
+            "type": "string",
+            "description": "The character's name."
+          },
+          "profession": {
+            "type": "string",
+            "description": "The character's profession."
+          },
+          "face": {
+            "type": "string",
+            "description": "The emoji representative."
+          },
+          "initialClue": {
+            "type": ["string", "null"],
+            "description": "Specific clue text found on the card."
+          }
+        },
+        "required": ["coord", "name", "profession", "face", "initialClue"]
+      }
+    }
+  },
+  "required": ["date", "url", "clues", "grid"]
+}

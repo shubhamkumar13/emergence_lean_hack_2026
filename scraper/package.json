@@ -1,0 +1,25 @@
+{
+  "name": "scraper",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@google/gemini-cli": "^0.41.0-nightly.20260423.gd1c91f526",
+    "@types/bun": "latest",
+    "@types/web": "^0.0.347"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "puppeteer": "^24.42.0",
+    "rescript": "12.2.0",
+    "rescript-bun": "2"
+  },
+  "scripts": {
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript watch"
+  }
+}

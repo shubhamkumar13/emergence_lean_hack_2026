@@ -1,0 +1,34 @@
+{
+  "grid": [
+    {
+      "type": "card",
+      "id": "card-abc",
+      "text": "Suspect A",
+      "coord": {
+        "row": 1,
+        "col": "A"
+      }
+    },
+    {
+      "type": "solvedCard",
+      "id": "card-123",
+      "text": "Suspect B",
+      "criminalStatus": {
+        "status": "innocent"
+      },
+      "coord": {
+        "row": 2,
+        "col": "B"
+      }
+    },
+    {
+      "type": "card",
+      "id": "card-xyz",
+      "text": "Suspect C",
+      "coord": {
+        "row": 3,
+        "col": "C"
+      }
+    }
+  ]
+}

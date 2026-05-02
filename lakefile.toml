@@ -1,0 +1,20 @@
+name = "leanhack"
+version = "0.1.0"
+defaultTargets = ["leanhack"]
+
+[[lean_lib]]
+name = "Leanhack"
+
+[[lean_exe]]
+name = "leanhack"
+root = "Main"
+moreLinkArgs = [
+  "/var/home/sk/leanhack/compat.o",
+  "-Wl,--undefined=__isoc23_fscanf",
+  "-Wl,--undefined=__isoc23_strtol"
+]
+
+[[require]]
+name = "smt"
+scope = "ufmg-smite"
+rev = "main"

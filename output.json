@@ -1,0 +1,208 @@
+{
+  "date": "2026-04-29",
+  "url": "https://cluesbysam.com/",
+  "clues": [
+    {
+      "text": "Everyone is either a criminal or innocent.",
+      "type": "rule"
+    },
+    {
+      "text": "Everyone speaks the truth, even the criminals.",
+      "type": "rule"
+    },
+    {
+      "text": "Above/below always means somewhere in the same column.",
+      "type": "rule"
+    },
+    {
+      "text": "There are exactly 2 innocents in between Isaac and Xavi",
+      "type": "clue",
+      "metadata": {
+        "count": 2,
+        "target": "innocent",
+        "subjects": [
+          "isaac",
+          "xavi"
+        ]
+      }
+    },
+    {
+      "text": "Rows go sideways and are numbered 1,2,3,4,5. Columns go\n          up and down and lettered A,B,C,D.",
+      "type": "rule"
+    },
+    {
+      "text": "Directly to the left/right/above/below always means the\n          neighbor to the left/right/above/below.",
+      "type": "rule"
+    },
+    {
+      "text": "In between (or sometimes just between) means the persons\n          between the two, not including the two.",
+      "type": "rule"
+    },
+    {
+      "text": "To the left/right always means somewhere in the same row (from\n          your point of view, not the person's).",
+      "type": "rule"
+    },
+    {
+      "text": "Numbers are exact unless stated otherwise. \"There are 2 criminal\n          coders\" means there're exactly 2 criminal coders.",
+      "type": "rule"
+    },
+    {
+      "text": "... the most always means uniquely the most. If John has the\n          most criminal neighbors, no one can have as many criminal neighbors as\n          John.",
+      "type": "rule"
+    },
+    {
+      "text": "More doesn't mean there needs to be any in the lesser group.\n          For example \"There are more innocents in row A than row B\" doesn't\n          require there to be any innocents in row B.",
+      "type": "rule"
+    },
+    {
+      "text": "In total always means the sum of all in the group(s). Two\n          criminal cops and cooks in total means there might be 1 cop and 1\n          cook, or 0 cops and 2 cooks, or 2 cops and 0 cooks.",
+      "type": "rule"
+    },
+    {
+      "text": "Connected means a chain of orthogonal adjacency. For example\n          \"all criminals in row 1 are connected\" means there are no innocents\n          between any two criminals in that row. A group of one person is\n          considered connected\n          (like in graph theory), so it doesn't mean there are at least two.",
+      "type": "rule"
+    }
+  ],
+  "grid": [
+    {
+      "coord": "A1",
+      "name": "alice",
+      "profession": "cop",
+      "face": "👮‍♀️",
+      "initialClue": null
+    },
+    {
+      "coord": "B1",
+      "name": "betty",
+      "profession": "sleuth",
+      "face": "🕵️‍♀️",
+      "initialClue": null
+    },
+    {
+      "coord": "C1",
+      "name": "chloe",
+      "profession": "sleuth",
+      "face": "🕵️‍♀️",
+      "initialClue": null
+    },
+    {
+      "coord": "D1",
+      "name": "donald",
+      "profession": "cook",
+      "face": "👨‍🍳",
+      "initialClue": null
+    },
+    {
+      "coord": "A2",
+      "name": "flora",
+      "profession": "cook",
+      "face": "👩‍🍳",
+      "initialClue": null
+    },
+    {
+      "coord": "B2",
+      "name": "hazel",
+      "profession": "farmer",
+      "face": "👩‍🌾",
+      "initialClue": null
+    },
+    {
+      "coord": "C2",
+      "name": "isaac",
+      "profession": "farmer",
+      "face": "👨‍🌾",
+      "initialClue": null
+    },
+    {
+      "coord": "D2",
+      "name": "joy",
+      "profession": "cop",
+      "face": "👮‍♀️",
+      "initialClue": null
+    },
+    {
+      "coord": "A3",
+      "name": "logan",
+      "profession": "sleuth",
+      "face": "🕵️‍♂️",
+      "initialClue": null
+    },
+    {
+      "coord": "B3",
+      "name": "martin",
+      "profession": "builder",
+      "face": "👷‍♂️",
+      "initialClue": null
+    },
+    {
+      "coord": "C3",
+      "name": "nala",
+      "profession": "doctor",
+      "face": "👩‍⚕️",
+      "initialClue": null
+    },
+    {
+      "coord": "D3",
+      "name": "pam",
+      "profession": "cop",
+      "face": "👮‍♀️",
+      "initialClue": null
+    },
+    {
+      "coord": "A4",
+      "name": "quita",
+      "profession": "farmer",
+      "face": "👩‍🌾",
+      "initialClue": null
+    },
+    {
+      "coord": "B4",
+      "name": "ruby",
+      "profession": "singer",
+      "face": "👩‍🎤",
+      "initialClue": null
+    },
+    {
+      "coord": "C4",
+      "name": "salil",
+      "profession": "doctor",
+      "face": "👨‍⚕️",
+      "initialClue": null
+    },
+    {
+      "coord": "D4",
+      "name": "tyler",
+      "profession": "doctor",
+      "face": "👨‍⚕️",
+      "initialClue": null
+    },
+    {
+      "coord": "A5",
+      "name": "vince",
+      "profession": "singer",
+      "face": "👨‍🎤",
+      "initialClue": null
+    },
+    {
+      "coord": "B5",
+      "name": "will",
+      "profession": "singer",
+      "face": "👨‍🎤",
+      "initialClue": "There are exactly 2 innocents in between Isaac and Xavi"
+    },
+    {
+      "coord": "C5",
+      "name": "xavi",
+      "profession": "cook",
+      "face": "👨‍🍳",
+      "initialClue": null
+    },
+    {
+      "coord": "D5",
+      "name": "zed",
+      "profession": "builder",
+      "face": "👷‍♂️",
+      "initialClue": null
+    }
+  ]
+}

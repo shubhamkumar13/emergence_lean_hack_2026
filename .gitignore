@@ -1,0 +1,4 @@
+/.lake
+scraper/chrome/
+scraper/node_modules/
+scraper/lib/
