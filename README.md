@@ -38,8 +38,7 @@ Academic partner, hackathon co-design, tutorials,
 and mentorship
 
 ## Links
-- [Hackathon Page](https://east.emergence.ai/
-hackathon-april2026.html)
+- [Hackathon Page](https://east.emergence.ai/hackathon-april2026.html)
 - [Emergence India Labs](https://east.emergence.ai)
 - [Emergence AI](https://www.emergence.ai)
 
